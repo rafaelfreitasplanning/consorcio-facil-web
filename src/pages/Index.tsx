@@ -7,6 +7,7 @@ import { Car, Home, Star, Shield, TrendingUp, Users, Phone, Mail, MapPin } from 
 import heroImage from "@/assets/hero-consortiums.jpg";
 import carImage from "@/assets/car-consortium.jpg";
 import houseImage from "@/assets/house-consortium.jpg";
+import logoPlanning from "@/assets/logo-planning-consortios.png";
 const Index = () => {
   const handleConsortiumLearnMore = (type: string) => {
     // Scroll to contact form
@@ -30,11 +31,12 @@ const Index = () => {
       <header className="bg-white shadow-sm border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
-                <TrendingUp className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-bold text-primary">Planning Consórcios</span>
+            <div className="flex items-center">
+              <img 
+                src={logoPlanning} 
+                alt="Planning Consórcios" 
+                className="h-10 w-auto"
+              />
             </div>
             <nav className="hidden md:flex space-x-6">
               <a href="#home" className="text-primary hover:text-primary-glow transition-colors">Início</a>
