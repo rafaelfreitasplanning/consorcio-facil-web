@@ -299,7 +299,7 @@ const Index = () => {
                 <div className="w-8 h-8 bg-gradient-to-r from-accent to-accent-light rounded-lg flex items-center justify-center">
                   <TrendingUp className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-xl font-bold">ConsórcioMax</span>
+                <span className="text-xl font-bold">Planning Consó</span>
               </div>
               <p className="text-white/80">
                 Realizando sonhos através de consórcios há mais de 15 anos.
@@ -338,7 +338,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
-            <p>&copy; 2024 ConsórcioMax. Todos os direitos reservados.</p>
+            <p>© 2025 Planning consórcios. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
