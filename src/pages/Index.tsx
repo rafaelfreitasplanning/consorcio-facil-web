@@ -29,14 +29,10 @@ const Index = () => {
   return <div className="min-h-screen">
       {/* Header */}
       <header className="bg-white shadow-sm border-b sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-[16px] py-[8px]">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <img 
-                src={logoPlanning} 
-                alt="Planning Consórcios" 
-                className="h-16 w-auto"
-              />
+              <img src={logoPlanning} alt="Planning Consórcios" className="h-16 w-auto" />
             </div>
             <nav className="hidden md:flex space-x-6">
               <a href="#home" className="text-primary hover:text-primary-glow transition-colors">Início</a>
