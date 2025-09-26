@@ -7,7 +7,7 @@ import { Car, Home, Star, Shield, TrendingUp, Users, Phone, Mail, MapPin } from 
 import heroImage from "@/assets/hero-consortiums.jpg";
 import carImage from "@/assets/car-consortium.jpg";
 import houseImage from "@/assets/house-consortium.jpg";
-import logoPlanning from "@/assets/logo-planning-new.png";
+import logoPlanning from "@/assets/logo-planning-final.png";
 const Index = () => {
   const handleConsortiumLearnMore = (type: string) => {
     // Scroll to contact form
