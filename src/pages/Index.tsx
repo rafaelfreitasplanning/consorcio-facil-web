@@ -7,40 +7,25 @@ import { Car, Home, Star, Shield, TrendingUp, Users, Phone, Mail, MapPin } from 
 import heroImage from "@/assets/hero-consortiums.jpg";
 import carImage from "@/assets/car-consortium.jpg";
 import houseImage from "@/assets/house-consortium.jpg";
-
 const Index = () => {
   const handleConsortiumLearnMore = (type: string) => {
     // Scroll to contact form
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('contact')?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  const consortiumTypes = [
-    {
-      title: "Consórcio de Veículos",
-      description: "Realize o sonho do carro próprio com parcelas que cabem no seu bolso.",
-      image: carImage,
-      benefits: [
-        "Carros 0km e seminovos",
-        "Parcelas fixas sem juros",
-        "Possibilidade de antecipação",
-        "Contemplação por sorteio ou lance"
-      ]
-    },
-    {
-      title: "Consórcio Imobiliário",
-      description: "Conquiste sua casa própria ou invista em imóveis com segurança.",
-      image: houseImage,
-      benefits: [
-        "Imóveis residenciais e comerciais",
-        "Terrenos e construção",
-        "Sem análise de crédito restritiva",
-        "Valor corrigido pelo mercado"
-      ]
-    }
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const consortiumTypes = [{
+    title: "Consórcio de Veículos",
+    description: "Realize o sonho do carro próprio com parcelas que cabem no seu bolso.",
+    image: carImage,
+    benefits: ["Carros 0km e seminovos", "Parcelas fixas sem juros", "Possibilidade de antecipação", "Contemplação por sorteio ou lance"]
+  }, {
+    title: "Consórcio Imobiliário",
+    description: "Conquiste sua casa própria ou invista em imóveis com segurança.",
+    image: houseImage,
+    benefits: ["Imóveis residenciais e comerciais", "Terrenos e construção", "Sem análise de crédito restritiva", "Valor corrigido pelo mercado"]
+  }];
+  return <div className="min-h-screen">
       {/* Header */}
       <header className="bg-white shadow-sm border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
@@ -49,7 +34,7 @@ const Index = () => {
               <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
                 <TrendingUp className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-primary">ConsórcioMax</span>
+              <span className="text-xl font-bold text-primary">Planning Consórcios</span>
             </div>
             <nav className="hidden md:flex space-x-6">
               <a href="#home" className="text-primary hover:text-primary-glow transition-colors">Início</a>
@@ -66,10 +51,9 @@ const Index = () => {
 
       {/* Hero Section */}
       <section id="home" className="relative min-h-screen flex items-center">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: `url(${heroImage})`
+      }}>
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
         </div>
         
@@ -165,13 +149,7 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {consortiumTypes.map((consortium, index) => (
-              <ConsortiumCard
-                key={index}
-                {...consortium}
-                onLearnMore={() => handleConsortiumLearnMore(consortium.title)}
-              />
-            ))}
+            {consortiumTypes.map((consortium, index) => <ConsortiumCard key={index} {...consortium} onLearnMore={() => handleConsortiumLearnMore(consortium.title)} />)}
           </div>
         </div>
       </section>
@@ -186,35 +164,27 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Maria Silva",
-                text: "Conquistei minha casa própria com o consórcio imobiliário. Processo transparente e equipe muito atenciosa!",
-                rating: 5
-              },
-              {
-                name: "João Santos",
-                text: "Meu carro 0km chegou mais rápido do que esperava. Super recomendo o ConsórcioMax!",
-                rating: 5
-              },
-              {
-                name: "Ana Costa",
-                text: "Atendimento excepcional desde o primeiro contato. Realizei o sonho da casa própria!",
-                rating: 5
-              }
-            ].map((testimonial, index) => (
-              <Card key={index} className="text-center">
+            {[{
+            name: "Maria Silva",
+            text: "Conquistei minha casa própria com o consórcio imobiliário. Processo transparente e equipe muito atenciosa!",
+            rating: 5
+          }, {
+            name: "João Santos",
+            text: "Meu carro 0km chegou mais rápido do que esperava. Super recomendo o ConsórcioMax!",
+            rating: 5
+          }, {
+            name: "Ana Costa",
+            text: "Atendimento excepcional desde o primeiro contato. Realizei o sonho da casa própria!",
+            rating: 5
+          }].map((testimonial, index) => <Card key={index} className="text-center">
                 <CardContent className="pt-6">
                   <div className="flex justify-center mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                    ))}
+                    {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />)}
                   </div>
                   <p className="text-muted-foreground mb-4 italic">"{testimonial.text}"</p>
                   <p className="font-semibold text-primary">{testimonial.name}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -372,8 +342,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
