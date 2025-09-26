@@ -241,49 +241,7 @@ const Index = () => {
             </Card>
 
             {/* Contact Info */}
-            <div className="space-y-8">
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                      <Phone className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-primary">Telefone</h3>
-                      <p className="text-muted-foreground">(11) 3333-4444</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                      <Mail className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-primary">E-mail</h3>
-                      <p className="text-muted-foreground">contato@planningconsorcios.com.br</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="pt-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                      <MapPin className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-primary">Endereço</h3>
-                      <p className="text-muted-foreground">Av. Paulista, 1000 - São Paulo, SP</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -297,7 +255,7 @@ const Index = () => {
                 <div className="w-8 h-8 bg-gradient-to-r from-accent to-accent-light rounded-lg flex items-center justify-center">
                   <TrendingUp className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-xl font-bold">Planning Consó</span>
+                <span className="text-xl font-bold">Planning Consórcios</span>
               </div>
               <p className="text-white/80">
                 Realizando sonhos através de consórcios há mais de 15 anos.
@@ -327,8 +285,8 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Contato</h4>
               <ul className="space-y-2 text-white/80">
-                <li>(11) 3333-4444</li>
-                <li>contato@p.com.br</li>
+                <li>(11) 94031 6758</li>
+                <li>contato@planningconsorcios.com.br</li>
                 <li>Av. Paulista, 1000</li>
                 <li>São Paulo, SP</li>
               </ul>
