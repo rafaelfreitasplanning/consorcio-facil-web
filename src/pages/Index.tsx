@@ -266,7 +266,7 @@ const Index = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-primary">E-mail</h3>
-                      <p className="text-muted-foreground">contato@consorciomax.com.br</p>
+                      <p className="text-muted-foreground">contato@planningconsorcios.com.br</p>
                     </div>
                   </div>
                 </CardContent>
@@ -330,7 +330,7 @@ const Index = () => {
               <h4 className="font-semibold mb-4">Contato</h4>
               <ul className="space-y-2 text-white/80">
                 <li>(11) 3333-4444</li>
-                <li>contato@consorciomax.com.br</li>
+                <li>contato@p.com.br</li>
                 <li>Av. Paulista, 1000</li>
                 <li>São Paulo, SP</li>
               </ul>
