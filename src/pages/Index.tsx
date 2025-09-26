@@ -40,7 +40,7 @@ const Index = () => {
               <a href="#sobre" className="text-primary hover:text-primary-glow transition-colors">Sobre</a>
               <a href="#contact" className="text-primary hover:text-primary-glow transition-colors">Contato</a>
             </nav>
-            <Button variant="cta" className="hidden md:flex">
+            <Button variant="cta" className="hidden md:flex" onClick={() => window.open('https://form.respondi.app/BG9ByMo6', '_blank')}>
               Simular Agora
             </Button>
           </div>
@@ -65,10 +65,10 @@ const Index = () => {
               Parcelas que cabem no seu orçamento, sem comprometer sua renda.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+              <Button variant="hero" size="lg" className="text-lg px-8 py-4" onClick={() => window.open('https://form.respondi.app/BG9ByMo6', '_blank')}>
                 Simular Consórcio
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 bg-white/10 border-white/30 text-white hover:bg-white/20">
+              <Button variant="outline" size="lg" className="text-lg px-8 py-4 bg-white/10 border-white/30 text-white hover:bg-white/20" onClick={() => window.open('https://wa.me/message/7OMAIKYBH3XLM1', '_blank')}>
                 Falar com Especialista
               </Button>
             </div>
@@ -234,7 +234,7 @@ const Index = () => {
                     <Input id="value" placeholder="R$ 50.000,00" />
                   </div>
                 </div>
-                <Button variant="cta" className="w-full">
+                <Button variant="cta" className="w-full" onClick={() => window.open('https://form.respondi.app/BG9ByMo6', '_blank')}>
                   Solicitar Simulação Gratuita
                 </Button>
               </CardContent>
