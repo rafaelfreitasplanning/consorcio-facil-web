@@ -35,7 +35,7 @@ const Index = () => {
               <img 
                 src={logoPlanning} 
                 alt="Planning Consórcios" 
-                className="h-10 w-auto"
+                className="h-16 w-auto"
               />
             </div>
             <nav className="hidden md:flex space-x-6">
