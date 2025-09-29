@@ -7,6 +7,9 @@ import { Car, Home, Star, Shield, TrendingUp, Users, Phone, Mail, MapPin } from 
 import heroImage from "@/assets/hero-consortiums.jpg";
 import carImage from "@/assets/car-consortium.jpg";
 import houseImage from "@/assets/house-consortium.jpg";
+import motoImage from "@/assets/moto-consortium.jpg";
+import heavyImage from "@/assets/heavy-consortium.jpg";
+import investmentImage from "@/assets/investment-consortium.jpg";
 import logoPlanning from "@/assets/logo-planning-final.png";
 const Index = () => {
   const handleConsortiumLearnMore = (type: string) => {
@@ -25,6 +28,21 @@ const Index = () => {
     description: "Conquiste sua casa própria ou invista em imóveis com segurança.",
     image: houseImage,
     benefits: ["Imóveis residenciais e comerciais", "Terrenos e construção", "Sem análise de crédito restritiva", "Valor corrigido pelo mercado"]
+  }, {
+    title: "Consórcio de Motos",
+    description: "Garanta sua moto nova com as melhores condições do mercado.",
+    image: motoImage,
+    benefits: ["Motos 0km de todas as marcas", "Parcelas acessíveis", "Sem entrada obrigatória", "Aprovação facilitada"]
+  }, {
+    title: "Consórcio de Pesados",
+    description: "Adquira caminhões e veículos comerciais para expandir seu negócio.",
+    image: heavyImage,
+    benefits: ["Caminhões e utilitários pesados", "Equipamentos para construção", "Condições especiais para empresas", "Planejamento de longo prazo"]
+  }, {
+    title: "Consórcio de Investimentos",
+    description: "Alcance seus objetivos financeiros e invista no seu futuro com inteligência.",
+    image: investmentImage,
+    benefits: ["Capital para investimentos diversos", "Liberdade de aplicação", "Formação de patrimônio", "Rentabilidade sem juros"]
   }];
   return <div className="min-h-screen">
       {/* Header */}
@@ -146,7 +164,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {consortiumTypes.map((consortium, index) => <ConsortiumCard key={index} {...consortium} onLearnMore={() => handleConsortiumLearnMore(consortium.title)} />)}
           </div>
         </div>
