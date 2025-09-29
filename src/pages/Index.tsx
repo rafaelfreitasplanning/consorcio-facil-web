@@ -2,48 +2,50 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { ConsortiumCard } from "@/components/ConsortiumCard";
-import { Car, Home, Star, Shield, TrendingUp, Users, Phone, Mail, MapPin } from "lucide-react";
+import { SimpleConsortiumCard } from "@/components/SimpleConsortiumCard";
+import { Car, Home, Star, Shield, TrendingUp, Users, Bike, Truck, DollarSign, Plane } from "lucide-react";
 import heroImage from "@/assets/hero-consortiums.jpg";
-import carImage from "@/assets/car-consortium.jpg";
-import houseImage from "@/assets/house-consortium.jpg";
-import motoImage from "@/assets/moto-consortium.jpg";
-import heavyImage from "@/assets/heavy-consortium.jpg";
-import investmentImage from "@/assets/investment-consortium.jpg";
 import logoPlanning from "@/assets/logo-planning-final.png";
+
 const Index = () => {
-  const handleConsortiumLearnMore = (type: string) => {
-    // Scroll to contact form
-    document.getElementById('contact')?.scrollIntoView({
-      behavior: 'smooth'
-    });
-  };
-  const consortiumTypes = [{
-    title: "Consórcio de Veículos",
-    description: "Realize o sonho do carro próprio com parcelas que cabem no seu bolso.",
-    image: carImage,
-    benefits: ["Carros 0km e seminovos", "Parcelas fixas sem juros", "Possibilidade de antecipação", "Contemplação por sorteio ou lance"]
-  }, {
-    title: "Consórcio Imobiliário",
-    description: "Conquiste sua casa própria ou invista em imóveis com segurança.",
-    image: houseImage,
-    benefits: ["Imóveis residenciais e comerciais", "Terrenos e construção", "Sem análise de crédito restritiva", "Valor corrigido pelo mercado"]
-  }, {
-    title: "Consórcio de Motos",
-    description: "Garanta sua moto nova com as melhores condições do mercado.",
-    image: motoImage,
-    benefits: ["Motos 0km de todas as marcas", "Parcelas acessíveis", "Sem entrada obrigatória", "Aprovação facilitada"]
-  }, {
-    title: "Consórcio de Pesados",
-    description: "Adquira caminhões e veículos comerciais para expandir seu negócio.",
-    image: heavyImage,
-    benefits: ["Caminhões e utilitários pesados", "Equipamentos para construção", "Condições especiais para empresas", "Planejamento de longo prazo"]
-  }, {
-    title: "Consórcio de Investimentos",
-    description: "Alcance seus objetivos financeiros e invista no seu futuro com inteligência.",
-    image: investmentImage,
-    benefits: ["Capital para investimentos diversos", "Liberdade de aplicação", "Formação de patrimônio", "Rentabilidade sem juros"]
-  }];
+  const consortiumTypes = [
+    {
+      title: "Investimentos",
+      description: "Deseja alavancar financeiramente e ter bons retornos financeiros com o investimento em consórcio? Vamos te ajudar a encontrar o melhor grupo e estratégia para isso também!",
+      icon: DollarSign,
+      path: "/consorcio-investimentos"
+    },
+    {
+      title: "Motocicleta",
+      description: "Alguns gostam de carros e outros são apaixonados por motos, e a Prefiro atua exatamente para a conquista do que deseja. Vamos planejar a compra da sua moto?",
+      icon: Bike,
+      path: "/consorcio-motos"
+    },
+    {
+      title: "Serviços",
+      description: "O que você deseja? Viajar? Realizar algum procedimento estético? Com a Prefiro, tudo isso é possível, entenda como podemos auxiliá-lo nesta conquista também!",
+      icon: Plane,
+      path: "/consorcio-investimentos"
+    },
+    {
+      title: "Pesados",
+      description: "A maneira mais fácil e barata de você expandir seus negócios você vai encontrar conversando com os consultores da Prefiro Consórcio.",
+      icon: Truck,
+      path: "/consorcio-pesados"
+    },
+    {
+      title: "Veículos",
+      description: "Use o Crédito de Consórcio e compre o veículo que você sempre quis.",
+      icon: Car,
+      path: "/consorcio-veiculos"
+    },
+    {
+      title: "Imóveis",
+      description: "Conquiste sua casa própria ou invista em imóveis com segurança.",
+      icon: Home,
+      path: "/consorcio-imoveis"
+    }
+  ];
   return <div className="min-h-screen">
       {/* Header */}
       <header className="bg-white shadow-sm border-b sticky top-0 z-50">
@@ -164,8 +166,10 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {consortiumTypes.map((consortium, index) => <ConsortiumCard key={index} {...consortium} onLearnMore={() => handleConsortiumLearnMore(consortium.title)} />)}
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {consortiumTypes.map((consortium, index) => (
+              <SimpleConsortiumCard key={index} {...consortium} />
+            ))}
           </div>
         </div>
       </section>
