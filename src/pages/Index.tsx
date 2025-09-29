@@ -10,6 +10,18 @@ import logoPlanning from "@/assets/logo-planning-final.png";
 const Index = () => {
   const consortiumTypes = [
     {
+      title: "Imóveis",
+      description: "Conquiste sua casa própria ou invista em imóveis com segurança.",
+      icon: Home,
+      path: "/consorcio-imoveis"
+    },
+    {
+      title: "Veículos",
+      description: "Use o Crédito de Consórcio e compre o veículo que você sempre quis.",
+      icon: Car,
+      path: "/consorcio-veiculos"
+    },
+    {
       title: "Investimentos",
       description: "Deseja alavancar financeiramente e ter bons retornos financeiros com o investimento em consórcio? Vamos te ajudar a encontrar o melhor grupo e estratégia para isso também!",
       icon: DollarSign,
@@ -32,18 +44,6 @@ const Index = () => {
       description: "A maneira mais fácil e barata de você expandir seus negócios você vai encontrar conversando com os consultores da Prefiro Consórcio.",
       icon: Truck,
       path: "/consorcio-pesados"
-    },
-    {
-      title: "Veículos",
-      description: "Use o Crédito de Consórcio e compre o veículo que você sempre quis.",
-      icon: Car,
-      path: "/consorcio-veiculos"
-    },
-    {
-      title: "Imóveis",
-      description: "Conquiste sua casa própria ou invista em imóveis com segurança.",
-      icon: Home,
-      path: "/consorcio-imoveis"
     }
   ];
   return <div className="min-h-screen">
