@@ -221,9 +221,9 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div className="flex justify-center">
             {/* Contact Form */}
-            <Card>
+            <Card className="w-full max-w-2xl">
               <CardHeader>
                 <CardTitle className="text-2xl text-primary">Solicite uma Simulação</CardTitle>
               </CardHeader>
@@ -261,9 +261,6 @@ const Index = () => {
                 </Button>
               </CardContent>
             </Card>
-
-            {/* Contact Info */}
-            
           </div>
         </div>
       </section>
