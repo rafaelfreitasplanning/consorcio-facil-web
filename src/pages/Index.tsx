@@ -312,8 +312,13 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
-            <p>© 2025 Planning consórcios. Todos os direitos reservados.</p>
+          <div className="border-t border-white/20 mt-8 pt-8 text-center">
+            <div className="text-white/60 mb-4">
+              <a href="/politica-privacidade" className="hover:text-white transition-colors">Políticas de Privacidade</a>
+              {" | "}
+              <a href="/termos-condicoes" className="hover:text-white transition-colors">Termos e condições</a>
+            </div>
+            <p className="text-white/60">© 2025 Planning consórcios. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>

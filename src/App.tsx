@@ -10,6 +10,8 @@ import ConsortiumProperty from "./pages/ConsortiumProperty";
 import ConsortiumMotorcycle from "./pages/ConsortiumMotorcycle";
 import ConsortiumHeavy from "./pages/ConsortiumHeavy";
 import ConsortiumInvestment from "./pages/ConsortiumInvestment";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +28,8 @@ const App = () => (
           <Route path="/consorcio-motos" element={<ConsortiumMotorcycle />} />
           <Route path="/consorcio-pesados" element={<ConsortiumHeavy />} />
           <Route path="/consorcio-investimentos" element={<ConsortiumInvestment />} />
+          <Route path="/politica-privacidade" element={<PrivacyPolicy />} />
+          <Route path="/termos-condicoes" element={<TermsConditions />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
