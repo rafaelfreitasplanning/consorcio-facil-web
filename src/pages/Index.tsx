@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { SimpleConsortiumCard } from "@/components/SimpleConsortiumCard";
-import { Car, Home, Star, Shield, TrendingUp, Users, Bike, Truck, DollarSign, Plane } from "lucide-react";
+import { Car, Home, Star, Shield, TrendingUp, Users, Bike, Truck, DollarSign, Plane, Instagram, Facebook, Phone, Mail, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero-consortiums.jpg";
 import logoPlanning from "@/assets/logo-planning-final.png";
 
@@ -268,47 +268,66 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-primary text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-12">
+            {/* Contato */}
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-accent to-accent-light rounded-lg flex items-center justify-center">
-                  <TrendingUp className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-xl font-bold">Planning Consórcios</span>
+              <h4 className="font-semibold text-xl mb-6">Contato</h4>
+              <ul className="space-y-3 text-white/80">
+                <li className="flex items-center gap-2">
+                  <Phone className="w-4 h-4" />
+                  (11) 94031 6758
+                </li>
+                <li className="flex items-center gap-2">
+                  <Mail className="w-4 h-4" />
+                  contato@planningconsorcios.com.br
+                </li>
+                <li className="flex items-start gap-2">
+                  <MapPin className="w-4 h-4 mt-1" />
+                  <span>Av. Paulista, 1000<br />São Paulo, SP</span>
+                </li>
+              </ul>
+            </div>
+            
+            {/* Menu */}
+            <div>
+              <h4 className="font-semibold text-xl mb-6">Menu</h4>
+              <ul className="space-y-3 text-white/80">
+                <li>
+                  <a href="#home" className="hover:text-white transition-colors">Início</a>
+                </li>
+                <li>
+                  <a href="#consorcios" className="hover:text-white transition-colors">Consórcios</a>
+                </li>
+                <li>
+                  <a href="#sobre" className="hover:text-white transition-colors">Sobre</a>
+                </li>
+                <li>
+                  <a href="#contact" className="hover:text-white transition-colors">Contato</a>
+                </li>
+              </ul>
+            </div>
+            
+            {/* Redes Sociais */}
+            <div>
+              <h4 className="font-semibold text-xl mb-6">Nossas redes sociais</h4>
+              <div className="flex gap-4">
+                <a 
+                  href="https://www.instagram.com/planningconsorcios" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-white/90 transition-colors"
+                >
+                  <Instagram className="w-6 h-6 text-primary" />
+                </a>
+                <a 
+                  href="https://www.facebook.com/planningconsorcios" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-white/90 transition-colors"
+                >
+                  <Facebook className="w-6 h-6 text-primary" />
+                </a>
               </div>
-              <p className="text-white/80">
-                Realizando sonhos através de consórcios há mais de 15 anos.
-              </p>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Consórcios</h4>
-              <ul className="space-y-2 text-white/80">
-                <li>Veículos</li>
-                <li>Imóveis</li>
-                <li>Motos</li>
-                <li>Caminhões</li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Empresa</h4>
-              <ul className="space-y-2 text-white/80">
-                <li>Sobre Nós</li>
-                <li>Como Funciona</li>
-                <li>Dúvidas Frequentes</li>
-                <li>Blog</li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Contato</h4>
-              <ul className="space-y-2 text-white/80">
-                <li>(11) 94031 6758</li>
-                <li>contato@planningconsorcios.com.br</li>
-                <li>Av. Paulista, 1000</li>
-                <li>São Paulo, SP</li>
-              </ul>
             </div>
           </div>
           
