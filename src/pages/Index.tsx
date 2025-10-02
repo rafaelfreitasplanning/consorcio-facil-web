@@ -4,9 +4,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { SimpleConsortiumCard } from "@/components/SimpleConsortiumCard";
 import { Car, Home, Star, Shield, TrendingUp, Users, Bike, Truck, DollarSign, Plane, Instagram, Facebook, Phone, Mail, MapPin } from "lucide-react";
-import heroImage from "@/assets/hero-consortiums.jpg";
 import logoPlanning from "@/assets/logo-planning-final.png";
 import rafaelFreitas from "@/assets/rafael-freitas.jpg";
+import rafaelHeroNoBg from "@/assets/rafael-hero-nobg.png";
 
 const Index = () => {
   const consortiumTypes = [
@@ -69,29 +69,39 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-        backgroundImage: `url(${heroImage})`
-      }}>
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
-        </div>
+      <section id="home" className="relative min-h-screen flex items-center bg-gradient-to-br from-primary via-primary to-primary/80 overflow-hidden">
+        {/* Decorative background elements */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(255,255,255,0.05),transparent_50%)]" />
         
         <div className="relative container mx-auto px-4 py-20">
-          <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Realize Seus Sonhos com <span className="text-accent-light">Consórcio</span>
-            </h1>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl">
-              A forma mais inteligente de conquistar seu veículo ou imóvel próprio. 
-              Parcelas que cabem no seu orçamento, sem comprometer sua renda.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-4" onClick={() => window.open('https://form.respondi.app/BG9ByMo6', '_blank')}>
-                Simular Consórcio
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4 bg-white/10 border-white/30 text-white hover:bg-white/20" onClick={() => window.open('https://wa.me/message/7OMAIKYBH3XLM1', '_blank')}>
-                Falar com Especialista
-              </Button>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Image Column */}
+            <div className="flex justify-center md:justify-start">
+              <img 
+                src={rafaelHeroNoBg} 
+                alt="Rafael Freitas - Planning Consórcios" 
+                className="w-full max-w-md md:max-w-lg h-auto object-contain drop-shadow-2xl"
+              />
+            </div>
+            
+            {/* Content Column */}
+            <div className="text-center md:text-left">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                Realize Seus Sonhos com <span className="text-accent-light">Consórcio</span>
+              </h1>
+              <p className="text-lg md:text-xl text-white/90 mb-8">
+                A forma mais inteligente de conquistar seu veículo ou imóvel próprio. 
+                Parcelas que cabem no seu orçamento, sem comprometer sua renda.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <Button variant="hero" size="lg" className="text-lg px-8 py-4" onClick={() => window.open('https://form.respondi.app/BG9ByMo6', '_blank')}>
+                  Simular Consórcio
+                </Button>
+                <Button variant="outline" size="lg" className="text-lg px-8 py-4 bg-white/10 border-white/30 text-white hover:bg-white/20" onClick={() => window.open('https://wa.me/message/7OMAIKYBH3XLM1', '_blank')}>
+                  Falar com Especialista
+                </Button>
+              </div>
             </div>
           </div>
         </div>
