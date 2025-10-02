@@ -69,31 +69,24 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-end bg-gradient-to-br from-primary via-primary to-primary/80 overflow-hidden pb-0">
+      <section id="home" className="relative bg-gradient-to-br from-primary via-primary to-primary/80 overflow-hidden">
         {/* Decorative background elements */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent_50%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(255,255,255,0.05),transparent_50%)]" />
         
-        {/* Curved bottom shape */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gray-50">
-          <svg className="absolute top-0 w-full h-32" preserveAspectRatio="none" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,50 Q360,0 720,50 T1440,50 L1440,100 L0,100 Z" fill="rgb(249, 250, 251)" />
-          </svg>
-        </div>
-        
-        <div className="relative container mx-auto px-4 py-20 pb-0">
-          <div className="grid md:grid-cols-2 gap-12 items-end">
+        <div className="relative container mx-auto px-4 pt-20">
+          <div className="grid md:grid-cols-2 gap-8 items-end min-h-[calc(100vh-80px)]">
             {/* Image Column */}
-            <div className="flex justify-center md:justify-start items-end">
+            <div className="flex justify-center md:justify-start items-end h-full">
               <img 
                 src={rafaelHeroNoBg} 
                 alt="Rafael Freitas - Planning Consórcios" 
-                className="w-full max-w-lg md:max-w-2xl h-auto object-contain drop-shadow-2xl"
+                className="w-full max-w-md md:max-w-xl lg:max-w-2xl h-auto object-contain object-bottom drop-shadow-2xl"
               />
             </div>
             
             {/* Content Column */}
-            <div className="text-center md:text-left pb-20">
+            <div className="text-center md:text-left pb-12 md:pb-24">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                 Realize Seus Sonhos com <span className="text-accent-light">Consórcio</span>
               </h1>
@@ -111,6 +104,13 @@ const Index = () => {
               </div>
             </div>
           </div>
+        </div>
+        
+        {/* Curved bottom transition */}
+        <div className="relative h-20 md:h-32">
+          <svg className="absolute bottom-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,50 Q360,0 720,50 T1440,50 L1440,100 L0,100 Z" fill="rgb(249, 250, 251)" />
+          </svg>
         </div>
       </section>
 
