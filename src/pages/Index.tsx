@@ -88,7 +88,7 @@ const Index = () => {
             {/* Content Column */}
             <div className="text-center md:text-left pb-12 md:pb-24 md:-mt-32">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Realize Seus Sonhos com <span className="text-accent-light">Consórcio</span>
+                Realize Seus Sonhos com <span className="text-white font-extrabold drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">Consórcio</span>
               </h1>
               <p className="text-lg md:text-xl text-white/90 mb-8">
                 A forma mais inteligente de conquistar seu veículo ou imóvel próprio. 
