@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { SimpleConsortiumCard } from "@/components/SimpleConsortiumCard";
 import { Car, Home, Star, Shield, TrendingUp, Users, Bike, Truck, DollarSign, Plane, Instagram, Facebook, Phone, Mail, MapPin } from "lucide-react";
 import logoPlanning from "@/assets/logo-planning-final.png";
-import rafaelFreitas from "@/assets/rafael-freitas.jpg";
+import rafaelFreitas from "@/assets/rafael-freitas-new.jpg";
 import rafaelHeroNoBg from "@/assets/rafael-hero-nobg.png";
 
 const Index = () => {
