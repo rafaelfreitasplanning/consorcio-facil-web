@@ -75,7 +75,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(255,255,255,0.05),transparent_50%)]" />
         
         <div className="relative container mx-auto px-4 pt-20">
-          <div className="grid md:grid-cols-2 gap-8 items-end min-h-[calc(100vh-80px)]">
+          <div className="grid md:grid-cols-2 gap-8 items-center min-h-[calc(100vh-80px)]">
             {/* Image Column */}
             <div className="flex justify-center md:justify-start items-end h-full">
               <img 
@@ -86,7 +86,7 @@ const Index = () => {
             </div>
             
             {/* Content Column */}
-            <div className="text-center md:text-left pb-12 md:pb-24">
+            <div className="text-center md:text-left pb-12 md:pb-24 md:-mt-32">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                 Realize Seus Sonhos com <span className="text-accent-light">Consórcio</span>
               </h1>
