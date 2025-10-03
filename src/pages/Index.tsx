@@ -77,11 +77,11 @@ const Index = () => {
         <div className="relative container mx-auto px-4 pt-20">
           <div className="grid md:grid-cols-2 gap-8 items-center min-h-[calc(100vh-80px)]">
             {/* Image Column */}
-            <div className="flex justify-center md:justify-start items-end h-full">
+            <div className="flex justify-center md:justify-start items-center h-full min-h-[600px] md:min-h-[700px]">
               <img 
                 src={rafaelHeroNoBg} 
                 alt="Rafael Freitas - Planning Consórcios" 
-                className="w-full max-w-md md:max-w-xl lg:max-w-2xl h-auto object-contain object-bottom drop-shadow-2xl"
+                className="w-full max-w-md md:max-w-xl lg:max-w-2xl h-[600px] md:h-[700px] object-cover object-center drop-shadow-2xl"
               />
             </div>
             
