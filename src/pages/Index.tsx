@@ -105,13 +105,6 @@ const Index = () => {
             </div>
           </div>
         </div>
-        
-        {/* Curved bottom transition */}
-        <div className="relative h-20 md:h-32">
-          <svg className="absolute bottom-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,50 Q360,0 720,50 T1440,50 L1440,100 L0,100 Z" fill="rgb(249, 250, 251)" />
-          </svg>
-        </div>
       </section>
 
       {/* Benefits Section */}
