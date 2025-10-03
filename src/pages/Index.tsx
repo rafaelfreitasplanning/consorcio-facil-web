@@ -88,18 +88,17 @@ const Index = () => {
             {/* Content Column */}
             <div className="text-center md:text-left pb-12 md:pb-24 md:-mt-32">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Realize Seus Sonhos com <span className="text-white font-extrabold drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">Consórcio</span>
+                O Plano Inteligente para a sua Próxima Grande <span className="text-white font-extrabold drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">Conquista.</span>
               </h1>
               <p className="text-lg md:text-xl text-white/90 mb-8">
-                A forma mais inteligente de conquistar seu veículo ou imóvel próprio. 
-                Parcelas que cabem no seu orçamento, sem comprometer sua renda.
+                Saia na frente com um planejamento sem os juros abusivos dos financiamentos. Conquiste seu carro ou imóvel com parcelas que aceleram seu futuro, não sua dívida.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <Button variant="hero" size="lg" className="text-lg px-8 py-4" onClick={() => window.open('https://form.respondi.app/BG9ByMo6', '_blank')}>
-                  Simular Consórcio
+                  Solicitar Análise Personalizada
                 </Button>
                 <Button variant="outline" size="lg" className="text-lg px-8 py-4 bg-white/10 border-white/30 text-white hover:bg-white/20" onClick={() => window.open('https://wa.me/message/7OMAIKYBH3XLM1', '_blank')}>
-                  Falar com Especialista
+                  Tirar Minhas Dúvidas
                 </Button>
               </div>
             </div>
