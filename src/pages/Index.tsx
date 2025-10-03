@@ -88,7 +88,7 @@ const Index = () => {
             {/* Content Column */}
             <div className="text-center md:text-left pb-12 md:pb-24 md:-mt-32">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                O Plano Inteligente para a sua Próxima Grande <span className="text-white font-extrabold drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">Conquista.</span>
+                O Plano Inteligente para a sua Próxima Grande Conquista.
               </h1>
               <p className="text-lg md:text-xl text-white/90 mb-8">
                 Saia na frente com um planejamento sem os juros abusivos dos financiamentos. Conquiste seu carro ou imóvel com parcelas que aceleram seu futuro, não sua dívida.
