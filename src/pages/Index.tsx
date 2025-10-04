@@ -142,7 +142,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Parcelas fixas sem juros, apenas taxa de administração. Muito mais econômico que financiamentos.
+                  Planejamento sem juros, apenas com taxa de administração. Suas parcelas são reajustadas para garantir seu poder de compra, o que torna o custo final muito menor que o dos financiamentos.
                 </p>
               </CardContent>
             </Card>
@@ -156,7 +156,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Possibilidade de antecipação, quitação e contemplação por sorteio ou lance livre.
+                  Antecipe parcelas ou quite seu plano quando desejar. Acelere sua conquista com diferentes modalidades de lances ou seja contemplado através dos sorteios mensais.
                 </p>
               </CardContent>
             </Card>
